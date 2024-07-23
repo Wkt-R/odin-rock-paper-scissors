@@ -1,6 +1,3 @@
-console.log("Hello World!")
-
-
 const array = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
@@ -25,8 +22,8 @@ function playRound(humanSelection, computerSelection){
     } else if((humanSelection === 'rock' && computerSelection === 'scissors') ||
             (humanSelection === 'paper' && computerSelection === 'rock') ||
             (humanSelection === 'scissors' && computerSelection === 'paper')) {
-                console.log(`You won this round! ${humanSelection} beats ${computerSelection}`)
-                humanScore++;
+        console.log(`You won this round! ${humanSelection} beats ${computerSelection}`)
+        humanScore++;
     } else {
         console.log(`You lost this round! ${computerSelection} beats ${humanSelection}`)
         computerScore++;
